@@ -61,6 +61,7 @@ img {
 }
 .page-nav .link {
   padding: 24px 0;
+  display: block;
 }
 
 .link-after {
@@ -88,8 +89,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .websudio-studio {
   color: #2e2f42;
@@ -124,7 +125,7 @@ img {
 .link-adress {
   display: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -140,7 +141,6 @@ img {
 .link-adress-contacts {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 /* -------SERVICE---------- */
 .service {
@@ -255,16 +255,17 @@ img {
   margin-bottom: 8px;
 }
 .sudio-title-m {
-  font-weight: 500;
+  font-weight: 700px;
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .sudio-paragraf {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -361,7 +362,7 @@ img {
 }
 /* ---------PORTFOLIO----------- */
 .portfolio {
-  padding: 96px;
+  padding: 96px 0;
 }
 
 .portfolio-title {
@@ -385,7 +386,6 @@ img {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: space-between;
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -453,6 +453,7 @@ img {
 .last .container {
   display: flex;
   flex-wrap: wrap;
+  gap: 72px 24px;
 }
 /* .last .container .container {
   flex-direction: column;
@@ -462,6 +463,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .last-a-p {
   /* margin-right: 120px; */
@@ -487,7 +489,6 @@ a.last-websudio.extra-class {
 .last-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
 }
 
 .last-ul {
@@ -508,9 +509,7 @@ a.last-websudio.extra-class {
 }
 .last-links {
   display: flex;
-
   gap: 16px;
-  padding-bottom: 72px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .last-links-link .link {
@@ -626,7 +625,7 @@ a.last-websudio.extra-class {
   justify-content: center;
   align-items: center;
   opacity: 0;
-
+  pointer-events: none;
   transition: 260ms ease-in-out;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -854,6 +853,7 @@ a.last-websudio.extra-class {
   display: flex;
   flex-direction: column;
   opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -950,21 +950,26 @@ a.last-websudio.extra-class {
     width: calc((100% - 72px) / 2);
   }
   .team-ul {
-    gap: 64px;
+    gap: 64px 24px;
     justify-content: center;
   }
   /* .team-ul .team-list {
     width: calc((100% - 72px) / 2);
   } */
   .portfolio-list .item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
+  }
+  .last .container {
+    padding-left: 108px;
   }
   .container1 {
-    margin-right: 24px;
     display: inline-block;
   }
   .last-div-link {
     display: inline-block;
+  }
+  .last-subscribe {
+    align-items: start;
   }
   .modal {
     width: 408px;
@@ -987,6 +992,9 @@ a.last-websudio.extra-class {
   .link-adress-contacts {
     flex-direction: column;
     gap: 12px;
+  }
+  .page-header .container .icon {
+    display: none;
   }
 }
 
@@ -1013,8 +1021,12 @@ a.last-websudio.extra-class {
     display: flex;
   }
   .sudio-title-m {
+    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
+  }
+  .sudio-paragraf {
+    font-weight: 400;
   }
   .team {
     padding: 120px 0;
@@ -1034,6 +1046,8 @@ a.last-websudio.extra-class {
   }
   .last .container {
     align-items: baseline;
+    margin-left: 120px;
+    padding-left: 0;
   }
   .container1 {
     margin-right: 120px;
@@ -1066,5 +1080,14 @@ a.last-websudio.extra-class {
   }
   .page-header .container {
     width: 1158px;
+  }
+}
+@media (min-resolution: 192dpi) {
+  .service {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x.jpg);
   }
 }
