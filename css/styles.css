@@ -295,7 +295,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
 }
 .team-ul .team-list {
@@ -436,6 +436,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
 }
 .portfolio-paragraph {
   font-weight: 400;
@@ -454,6 +455,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 24px;
+  justify-content: center;
 }
 /* .last .container .container {
   flex-direction: column;
@@ -943,6 +945,9 @@ a.last-websudio.extra-class {
   .service-button {
     margin-top: 36px;
   }
+  .sudio-title-m {
+    text-align: left;
+  }
   .studio-list {
     gap: 72px;
   }
@@ -961,6 +966,7 @@ a.last-websudio.extra-class {
   }
   .last .container {
     padding-left: 108px;
+    justify-content: flex-start;
   }
   .container1 {
     display: inline-block;
@@ -1002,6 +1008,9 @@ a.last-websudio.extra-class {
   .container {
     width: 1158px;
   }
+  .link-adress {
+    font-size: 16px;
+  }
   .service {
     padding: 188px 0;
   }
@@ -1021,7 +1030,6 @@ a.last-websudio.extra-class {
     display: flex;
   }
   .sudio-title-m {
-    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -1047,7 +1055,8 @@ a.last-websudio.extra-class {
   .last .container {
     align-items: baseline;
     margin-left: 120px;
-    padding-left: 0;
+    padding-left: 15px;
+    gap: unset;
   }
   .container1 {
     margin-right: 120px;
